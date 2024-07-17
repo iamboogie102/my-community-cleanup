@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .welcome-section {
+            background-image: url("https://i.pinimg.com/236x/6d/93/06/6d9306aefb9904d98d1b411fc2a36663.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .welcome-section h1 {
+            font-size: 50px;
+        }
+        .login-section {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+        }
+        .login-container img {
+            max-width: 50%;
+            margin-bottom: 20px;
+        }
+        .login-container h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .button-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-container .cancel-button {
+            background-color: #f44336;
+            display: none; /* Hide the cancel button */
+        }
+        .register-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .register-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-section">
+        <h1>Welcome to the Website</h1>
+    </div>
+    <div class="login-section">
+        <div class="login-container">
+            <img src="https://i.pinimg.com/236x/8f/58/10/8f581097eab9e4a477266b7183aed867.jpg" alt="Clean Up Day">
+            <h2>CLEAN UP COORDINATION LOGIN</h2>
+            <form action="dashboard.html" method="post">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <div class="button-container">
+                    <button type="submit" class="submit-button">Log In</button>
+                </div>
+            </form>
+            <div class="register-link">
+                Don't have an account? <a href="Registration form.html">Register</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

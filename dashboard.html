@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="dashboard styles.css">
+    <style>
+           .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            background: linear-gradient(to right, #ff9999, #cc0000);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: transform 0.2s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(228, 4, 4, 0.896)6);
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            color: #007BFF;
+            background-color: aquamarine;
+        }
+        .navbar .logo img {
+            height: 40px;
+        }
+        .navbar .donate {
+            background-color: #cc0000;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://i.pinimg.com/236x/8f/58/10/8f581097eab9e4a477266b7183aed867.jpg" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="year-in-review.html">Year in Review</a>
+            <a href="projects.html">Projects</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="gallery.html">Galleries</a>
+            <a href="news.html">News & Press</a>
+            <a href="donate.html" class="donate">Donate</a>
+        </div>
+    </div>
+    <div class="container">
+        <a href="register.html" class="box">Register for an event</a>
+        <a href="events.html" class="box">Events</a>
+        <a href="event-types.html" class="box">Event types</a>
+        <a href="reports.html" class="box">Reports page</a>
+        
+        <div id="upcoming-events" class="box"></div>
+    </div>
+
+    <script src="dashboard script.js" defer></script>
+</body>
+</html>

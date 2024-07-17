@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Community Cleanups</title>
+    <style>
+         .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header .logo {
+            width: 150px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .header .login-button {
+            padding: 10px 20px;
+            border: 1px solid green;
+            background-color:green;
+            color: black; 
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .header .login-button:hover {
+            background-color: #ff0000; /* Red background on hover */
+            color: white; /* White text on hover */
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image:url("https://i.pinimg.com/564x/b3/85/56/b385566d0cd1ba442c1ea67e79e6e205.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text {
+            color:green;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .marquee {
+            background: #333;
+            color: green;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://i.pinimg.com/236x/8f/58/10/8f581097eab9e4a477266b7183aed867.jpg" alt="Logo"> <!-- Replace 'logo.png' with your logo image file path -->
+        </div>
+        <a href="loging form.html" class="login-button">LOGIN</a>
+    </header>
+ <div class="container">
+        <div class="overlay">
+            <div class="text">Community Cleanups coordination platform</div>
+        </div>
+    </div>
+    <marquee class="marquee" behavior="scroll" direction="left" scrollamount="6">
+        Community Cleanups coordination platform
+    </marquee>
+    <p>
+        <span dir="auto">
+            "Welcome to our Community Clean-Up Coordination Website! In a world where our neighborhoods and
+             natural environments face increasing pollution, the importance of community clean-up initiatives 
+             cannot be overstated. These efforts not only enhance the beauty and safety of our local areas but
+              also foster a sense of shared responsibility and unity among residents. By working together,
+               we can make a tangible difference in preserving the health of our ecosystems and ensuring a 
+               cleaner, more vibrant community for future generations. Join us in our mission to create a cleaner, 
+               greener, and more sustainable environment for everyone!"
+        </span>
+     </p>
+</body>
+</html>

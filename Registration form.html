@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+			body {
+				background-image: url(https://i.pinimg.com/236x/9f/96/ee/9f96ee9e0f1061b6ccf190f89d221280.jpg);
+				background-size: cover;
+			}
+             {
+			font-family: Arial, sans-serif;
+		}
+		.registration-form {
+			width: 400px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.registration-form label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.registration-form input[type="text"], .registration-form input[type="email"], .registration-form input[type="tel"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		.registration-form input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.registration-form input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+        </style>
+    </head>
+    <body>
+        <div class="registration-form">
+            <h2>New member Registration Form</h2>
+            <form action="" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone number" required><br>
+				<label for="entry_category">Entry Category:</label>
+				<select id="entry_category" name="entry_category">
+					<option value="Individual">Individual</option>
+					<option value="Minor">Minor</option>
+					<option value="Organization">Organization</option>
+				</select><br><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>   
+    </body>
+</html>
